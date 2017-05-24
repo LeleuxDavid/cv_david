@@ -30,6 +30,27 @@ body {
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
 
+
+#canvas {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+#text {
+  min-height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 8vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 header {
   position: relative;
   height: 800px;
@@ -58,7 +79,13 @@ header .banner {
    text-align: center;
 }
 
-header .banner-text { width: 100%; }
+header .banner-text
+{
+  width: 100%;
+  z-index: 2;
+  position: relative;
+}
+
 header .banner-text h1 {
    font: 90px/1.1em 'opensans-bold', sans-serif;
    color: #fff;
@@ -80,7 +107,8 @@ header .banner-text h3 a {
 header .banner-text hr {
    width: 60%;
    margin: 18px auto 24px auto;
-   border-color: #ccc;
+   border: solid 1px;
+   border-color: #F06000;
 }
 
 /* header social links */
